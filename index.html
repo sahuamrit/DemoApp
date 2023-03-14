@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* CSS styles go here */
+      body {
+        font-family: sans-serif;
+      }
+      
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+      
+      #button {
+        background-color: green;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my demo page!</h1>
+    <div class="container">
+      <button id="button">Click me!</button>
+    </div>
+    <script>
+      // JavaScript code goes here
+      const button = document.getElementById('button');
+      button.addEventListener('click', () => {
+        alert('You clicked the button!');
+      });
+    </script>
+  </body>
+</html>
